@@ -1,6 +1,6 @@
 ## Clip GeoTIFF Image to Bounding Polygon
-
 This script allows you to clip a GeoTIFF image using a specified bounding polygon defined in a GeoJSON file. It also calculates the Normalized Difference Vegetation Index (NDVI) within the polygon region.
+
 
 ### Requirements
 
@@ -50,3 +50,25 @@ The script performs the following steps:
 You can customize the script by adjusting the parameters and uncommenting/commenting specific lines to modify the processing steps, such as normalizing the NDVI range.
 
 **Note**: Make sure to replace `script.py` with the actual filename if you rename the script file.
+
+
+<div style="display: flex;">
+  <div style="flex-basis: 40%;">
+    <figure>
+      <img src="image/img1.JPG" alt="Image 1" style="width: 50%;">
+      <figcaption>Figure 1. The original image.</figcaption>
+    </figure>
+  </div>
+  <div style="flex-basis: 30%;">
+    <figure>
+      <img src="image/img2.png" alt="Image 2" style="width: 30%;">
+      <figcaption>Figure 2. Clip image.</figcaption>
+    </figure>
+  </div>
+  <div style="flex-basis: 30%;">
+    <figure>
+      <img src="image/img3.png" alt="Image 3" style="width: 30%;">
+      <figcaption>Figure 3. NDVI - Clip image.</figcaption>
+    </figure>
+  </div>
+</div>  
