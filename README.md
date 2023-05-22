@@ -25,7 +25,7 @@ python clip_image.py --image T11SLU_20200925T183121_4Band_clip.tif --bounds boun
 ```
 
 
-### Explanation
+### Code explanation
 
 The script performs the following steps:
 
