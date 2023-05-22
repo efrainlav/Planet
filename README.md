@@ -21,10 +21,9 @@ pip install argparse rasterio numpy
 5. Run the script with the following command:
 
 ```shell
-python script.py --image path/to/image.tif --bounds path/to/bounds.geojson --output path/to/output.tif
+python clip_image.py --image T11SLU_20200925T183121_4Band_clip.tif --bounds bounds.geojson --output result.tif
 ```
 
-Replace `path/to/image.tif` with the path to your GeoTIFF image file, `path/to/bounds.geojson` with the path to your GeoJSON bounds file, and `path/to/output.tif` with the desired path to save the clipped image.
 
 ### Explanation
 
@@ -46,11 +45,6 @@ The script performs the following steps:
 14. If an exception occurs, it prints an error message.
 15. If the script is executed directly (not imported), it parses the command-line arguments using `argparse.ArgumentParser`.
 16. Calls the `clip_image_to_polygon` function with the provided command-line arguments.
-
-You can customize the script by adjusting the parameters and uncommenting/commenting specific lines to modify the processing steps, such as normalizing the NDVI range.
-
-**Note**: Make sure to replace `script.py` with the actual filename if you rename the script file.
-
 
 <div style="display: flex;">
   <div style="flex-basis: 40%;">
