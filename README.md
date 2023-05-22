@@ -1,6 +1,6 @@
 ## Clip GeoTIFF Image to Bounding Polygon
 
-This script allows you to clip a GeoTIFF image using a specified bounding polygon defined in a GeoJSON file. It also calculates the Normalized Difference Vegetation Index (NDVI) within the polygon region.
+This script allows to clip a GeoTIFF image using a specified bounding polygon defined in a GeoJSON file. It also calculates the Normalized Difference Vegetation Index (NDVI) within the polygon region.
 
 ### Requirements
 
@@ -26,7 +26,10 @@ python script.py --image path/to/image.tif --bounds path/to/bounds.geojson --out
 
 Replace `path/to/image.tif` with the path to your GeoTIFF image file, `path/to/bounds.geojson` with the path to your GeoJSON bounds file, and `path/to/output.tif` with the desired path to save the clipped image.
 
-### Explanation
+### Example Usage
+```shell
+clip_image.py --image T11SLU_20200925T183121_4Band_clip.tif --bounds bounds.geojson --output result.tif
+```
 
 The script performs the following steps:
 
