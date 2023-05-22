@@ -34,9 +34,10 @@ The script performs the following steps:
 3. The function initializes the `polygon_mask` variable.
 4. Opens the image file using `rasterio.open` and reads the GeoJSON file using `open` and `json.load`.
 5. Extracts the geometry from the GeoJSON file.
-6. Clips the image to the polygon using `rasterio.mask.mask` and obtains the clipped image and its transform.
+6. Clips the image to the polygon using `rasterio.mask` and obtains the clipped image and its transform.
 7. Creates a boolean mask indicating pixels inside the polygon.
-8. Calculates the NDVI using the red and NIR bands of the clipped image.
+8. Calculates the NDVI using the red and NIR bands of the clipped image (Assuming that the input image has 4 bands, with band 3 being Red and band 4
+being NIR).
 9. Applies the mask to the NDVI to assign non-zero values to areas outside the polygon.
 10. Updates the metadata for the clipped image, including height, width, transform, CRS, driver, and data type.
 11. Writes the clipped image to a new file using `rasterio.open` and `write`.
